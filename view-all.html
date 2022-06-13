@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>View All</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+	<div>
+		<div class="row">
+			<div class="col-md-4 col-sm-3"></div>
+			<div class="col-md-8 col-sm-9">
+				
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				  <div class="container-fluid">
+				  	<form>
+				  		<div class="input-group">
+				            <input class="form-control border-end-0 border rounded-pill form-text" type="text" value="Browse Events" id="example-search-input" style="background-color: rgba(0, 0, 0, 0.5);">
+				            <span class="input-group-append">
+				                <button class="btn btn-outline-secondary bg-dark border-start-0 border rounded-pill ms-n3" type="button">
+				                    <i class="fa fa-search"></i>
+				                </button>
+				            </span>
+		     			</div>
+				  	</form>
+				  	
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 view-all-nav">
+				        <li class="nav-item">
+				          <a class="nav-link mx-2 py-1 px-3" aria-current="page" href="#">Home</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link mx-2 py-1 px-3" href="#">Link</a>
+				        </li>
+				        <!-- <li class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				            Dropdown
+				          </a>
+				          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				            <li><a class="dropdown-item" href="#">Action</a></li>
+				            <li><a class="dropdown-item" href="#">Another action</a></li>
+				            <li><hr class="dropdown-divider"></li>
+				            <li><a class="dropdown-item" href="#">Something else here</a></li>
+				          </ul>
+				        </li> -->
+				        <li class="nav-item">
+				          <a class="nav-link btn btn-primary mx-2 py-1 px-3" href="#">create account</a>
+				        </li>
+				      </ul>
+				      
+				    </div>
+				  </div>
+				</nav>
+
+			</div>
+			<hr style="height: 5px;">
+		</div>
+
+		<div class="container">
+			<div class="d-flex justify-content-between">
+				<div><a href="#" class="btn btn-info text-capitalize py-1 px-3 category">sport</a></div>
+				<div><a href="#" class="btn btn-info text-capitalize py-1 px-3 category">music</a></div>
+				<div><a href="#" class="btn btn-info text-capitalize py-1 px-2 category">broadway</a></div>
+				<div><a href="#" class="btn btn-info text-capitalize py-1 px-4 category">art</a></div>
+				<div><a href="#" class="btn btn-info text-capitalize py-1 px-2 category">fashion</a></div>
+				<div><a href="#" class="btn btn-info text-capitalize py-1 px-2 category">business</a></div>
+				<div><a href="#" class="btn btn-info text-capitalize py-1 px-4 category">tech</a></div>
+			</div>
+
+			<div class="category-holder p-2 mb-3">
+				<a href="#" class="btn btn-info text-capitalize py-1 px-3 cat-item">sport</a>
+				<a href="#" class="btn btn-info text-capitalize py-1 px-3 cat-item">music</a>
+				<a href="#" class="btn btn-info text-capitalize py-1 px-2 cat-item">broadway</a>
+				<a href="#" class="btn btn-info text-capitalize py-1 px-4 cat-item">art</a>
+				<a href="#" class="btn btn-info text-capitalize py-1 px-2 cat-item">fashion</a>
+				<a href="#" class="btn btn-info text-capitalize py-1 px-2 cat-item">business</a>
+				<a href="#" class="btn btn-info text-capitalize py-1 px-4 cat-item">tech</a>
+			</div>
+
+			<div>
+				<div class="row mt-5">
+					<div class="col-md-1 col-sm-1 col-xs-6">
+						<i class="fa-solid fa-location-dot"></i>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="dropdown location-name">
+							<a href="#" type="text" class="text-decoration-none">
+								change location
+							</a>
+							<ul class="dropdown-menu location-drop">
+						    <li><a class="dropdown-item text-capitalize" href="#">lagos</a></li>
+						    <hr>
+						    <li><a class="dropdown-item text-capitalize" href="#">abuja</a></li>
+						    <hr>
+						    <li><a class="dropdown-item text-capitalize" href="#">rivers</a></li>
+						  </ul>
+						</div>	
+						  
+						
+					</div>
+					<div class="col-md-5 col-sm-5 col-xs-6">
+						
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="dropdown">
+						  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">
+						    <i class="fa-solid fa-filter mx-2"></i>filter
+						  </button>
+						  <ul class="dropdown-menu">
+						    <li><a class="dropdown-item" href="#">Link 1</a></li>
+						    <hr>
+						    <li><a class="dropdown-item" href="#">Link 2</a></li>
+						    <hr>
+						    <li><a class="dropdown-item" href="#">Link 3</a></li>
+						  </ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				<div class="justify-content-center">
+				<div class="row my-3">
+					<div class="col-md-3 col-sm-3 col-xs-6 mx-0 mt-2">
+						<div class="card view-all-cards" width="300" height="200">
+						    <img class="card mx-auto mt-4" src="img/bgbg.jpg" alt="Card image" width="90%" height="200">
+						    <div class="card-body mt-0">
+						    	<p ><span style="color: blue;"><i class="fa-solid fa-calendar-days mx-2"></i></span>SATURDAY, APRIL 17 6pm</p>
+						      <h4 class="card-title text-uppercase fw-bold mt-0" style="color: black;font-family: sans-serif;">fela kuti</h4>
+						      <p class="card-text"><span style="color: blue;"><i class="fa-solid fa-location-dot mx-2"></i></span>Wembley Arena, London</p>
+						      <p class="me-auto" style="color: black;">FROM</p>
+						      <div class="d-flex justify-content-between">
+					    	<span class="fs-4" style="color: blue">&#8358;30,000</span><span><a class="btn btn-primary p-0 view" href="#">View Tickets</a></span>
+					    </div>
+						    </div>
+						  </div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 mx-0 mt-2">
+						<div class="card view-all-cards" width="300" height="200">
+						    <img class="card mx-auto mt-4" src="img/bgbg.jpg" alt="Card image" width="90%" height="200">
+						    <div class="card-body mt-0">
+						    	<p ><span style="color: blue;"><i class="fa-solid fa-calendar-days mx-2"></i></span>SATURDAY, APRIL 17 6pm</p>
+						      <h4 class="card-title text-uppercase fw-bold mt-0" style="color: black;font-family: sans-serif;">fela kuti</h4>
+						      <p class="card-text"><span style="color: blue;"><i class="fa-solid fa-location-dot mx-2"></i></span>Wembley Arena, London</p>
+						      <p class="me-auto" style="color: black;">FROM</p>
+						      <div class="d-flex justify-content-between">
+					    	<span class="fs-4" style="color: blue">&#8358;30,000</span><span><a class="btn btn-primary p-0 view" href="#">View Tickets</a></span>
+					    </div>
+						    </div>
+						  </div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 mx-0 mt-2">
+						<div class="card view-all-cards" width="300" height="200">
+						    <img class="card mx-auto mt-4" src="img/bgbg.jpg" alt="Card image" width="90%" height="200">
+						    <div class="card-body mt-0">
+						    	<p ><span style="color: blue;"><i class="fa-solid fa-calendar-days mx-2"></i></span>SATURDAY, APRIL 17 6pm</p>
+						      <h4 class="card-title text-uppercase fw-bold mt-0" style="color: black;font-family: sans-serif;">fela kuti</h4>
+						      <p class="card-text"><span style="color: blue;"><i class="fa-solid fa-location-dot mx-2"></i></span>Wembley Arena, London</p>
+						      <p class="me-auto" style="color: black;">FROM</p>
+						      <div class="d-flex justify-content-between">
+					    	<span class="fs-4" style="color: blue">&#8358;30,000</span><span><a class="btn btn-primary p-0 view" href="#">View Tickets</a></span>
+					    </div>
+						    </div>
+						  </div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 mx-0 mt-2">
+						<div class="card view-all-cards" width="300" height="200">
+						    <img class="card mx-auto mt-4" src="img/bgbg.jpg" alt="Card image" width="90%" height="200">
+						    <div class="card-body mt-0">
+						    	<p ><span style="color: blue;"><i class="fa-solid fa-calendar-days mx-2"></i></span>SATURDAY, APRIL 17 6pm</p>
+						      <h4 class="card-title text-uppercase fw-bold mt-0" style="color: black;font-family: sans-serif;">fela kuti</h4>
+						      <p class="card-text"><span style="color: blue;"><i class="fa-solid fa-location-dot mx-2"></i></span>Wembley Arena, London</p>
+						      <p class="me-auto" style="color: black;">FROM</p>
+						      <div class="d-flex justify-content-between">
+					    	<span class="fs-4" style="color: blue">&#8358;30,000</span><span><a class="btn btn-primary p-0 view" href="#">View Tickets</a></span>
+					    </div>
+						    </div>
+						  </div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 mx-0 mt-2">
+						<div class="card view-all-cards" width="300" height="200">
+						    <img class="card mx-auto mt-4" src="img/bgbg.jpg" alt="Card image" width="90%" height="200">
+						    <div class="card-body mt-0">
+						    	<p ><span style="color: blue;"><i class="fa-solid fa-calendar-days mx-2"></i></span>SATURDAY, APRIL 17 6pm</p>
+						      <h4 class="card-title text-uppercase fw-bold mt-0" style="color: black;font-family: sans-serif;">fela kuti</h4>
+						      <p class="card-text"><span style="color: blue;"><i class="fa-solid fa-location-dot mx-2"></i></span>Wembley Arena, London</p>
+						      <p class="me-auto" style="color: black;">FROM</p>
+						      <div class="d-flex justify-content-between">
+					    	<span class="fs-4" style="color: blue">&#8358;30,000</span><span><a class="btn btn-primary p-0 view" href="#">View Tickets</a></span>
+					    </div>
+						    </div>
+						  </div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 mx-0 mt-2">
+
+						<div class="card view-all-cards" width="300" height="200">
+						    <img class="card mx-auto mt-4" src="img/bgbg.jpg" alt="Card image" width="90%" height="200">
+						    <div class="card-body mt-0">
+						    	<p ><span style="color: blue;"><i class="fa-solid fa-calendar-days mx-2"></i></span>SATURDAY, APRIL 17 6pm</p>
+						      <h4 class="card-title text-uppercase fw-bold mt-0" style="color: black;font-family: sans-serif;">fela kuti</h4>
+						      <p class="card-text"><span style="color: blue;"><i class="fa-solid fa-location-dot mx-2"></i></span>Wembley Arena, London</p>
+						      <p class="me-auto" style="color: black;">FROM</p>
+						      <div class="d-flex justify-content-between">
+					    	<span class="fs-4" style="color: blue">&#8358;30,000</span><span><a class="btn btn-primary p-0 view" href="#">View Tickets</a></span>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- row ends here -->
+	</div>
+			<div>
+				<div class="d-flex justify-content-center">
+					<p class="text-capitalize">All Results</p>
+				</div>
+			</div>
+
+
+			<footer class="m-5">
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-6 text-uppercase" style="font-family: sans-serif;">
+						<h1 class="fs-4">Quick links</h1>
+						<p class="mt-4">Buy tickets online</p>
+						<p>buy sports tickets</p>
+						<p>buy football tickets</p>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-6 text-uppercase" style="font-family: sans-serif;">
+						<h1 class="fs-4">Quick links</h1>
+						<p class="mt-4">sell tickets online</p>
+						<p>sell concert tickets</p>
+						<p>resell concert tickets</p>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-6 text-uppercase" style="font-family: sans-serif;">
+						<h1 class="fs-4">location</h1>
+						<p class="mt-4">lagos</p>
+						<p>abuja</p>
+						<p>rivers</p>
+					</div>
+					<hr style="height: 5px;">
+				</div>
+			</footer>
+
+		</div> <!-- container ends here -->
+		
+
+		
+		
+	</div>
+
+
+
+
+
+
+
+	<script type="text/javascript" src="js/bootstrap5.bundle.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+:root{
+	/*--primary: #3C3B3F;
+	--secondary: #605C3C;*/
+	--primary: hsla(255, 3%, 24%, 0.5);
+	--secondary: hsla(53, 23%, 31%, 0.5);
+}
+
+
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: black;
+	color: snow;
+	/*position: relative;*/
+}
+
+/* testing video start here */
+
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-wrapper {
+  /* Telling our absolute positioned video to 
+  be relative to this element */
+  position: relative;
+
+  width: 100%;
+  height: 700px;
+
+  /* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+
+  /* Centering the container's content vertically 
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homenav ul li a{
+	font-size: medium;
+	font-weight: bolder;
+	color: white !important;
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+}
+.homenav ul li a: hover{
+	color: blue !important;
+}
+.homenav .last{
+	/*background-color: red;*/
+}
+
+.bg-text{
+	font-family: fantasy;
+	margin-top: 10%;
+	font-size: xx-large !important;
+	font-weight: bold;
+	color: snow !important;
+}
+.bg-text span{
+	color: blue !important;
+}
+.form-text{
+	font-family: auto;
+	color: whitesmoke;
+}
+
+.bg-nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+.bg-text-wrapper{
+	position: absolute;
+	top: 150px;
+	left: 0;
+	animation-name: bgText;
+	animation-duration: 3s;
+}
+
+@keyframes bgText{
+	from{
+		transform: translateX(-60%);
+	}
+	to{
+		transform: translateX(60%);
+	}
+}
+
+
+
+
+.second-container{
+	/*background-color: black;
+	color: snow;*/
+}
+
+
+.card-color h4{
+	color: dark;
+}
+
+.display-ticket{
+	white-space: nowrap !important;
+  max-width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.ticket{
+	float: none !important;
+  display: inline-block !important;
+
+}
+
+.card-color{
+	background-color: #8c888d;
+	height: 360px;
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  display: inline-block !important;
+}
+.card-color:hover h4 {
+		color: snow !important;
+}
+.card-color:hover{
+		background-color: cadetblue;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.view:hover{
+	background-color: blue;
+	color: snow !important;
+}
+
+.display-image {
+	color: whitesmoke;
+	/*text-transform: uppercase;*/
+	font-family: sans-serif;
+	
+}
+.place-holder{
+	width: 100%;
+
+}
+.places{
+	transition: 1s ease;
+}
+.places:hover{
+		transform: scale(1.3);
+		background: #ff800a;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+		cursor: pointer;
+}
+
+
+
+.show-main-card{
+	background-color: #8c888d;
+	margin-right: 20%;
+	z-index: -1;
+}
+.show-card {
+  margin-left:-15%;
+  margin-top:  -10%;
+}
+.showdown-btn {
+	margin-top: -5%;
+	margin-left: -20%;
+	z-index: 1000;
+}
+.btnn:hover{
+	background-color: green;
+	border: none;
+	outline: none;
+}
+.faq-heading {
+	font-family: sans-serif;
+}
+footer p {
+	font-weight: normal;
+	font-size: small;
+}
+
+
+
+/* ================================== view All =========================================*/
+
+.view-all-nav .nav-item a {
+	color: snow !important;
+}
+.location-name:hover > .location-drop {
+	display: block;
+}
+
+.category {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: snow;
+	z-index: 10000;
+}
+
+.view-all-cards{
+	background-color: #8c888d;
+	transition: 1s ease;
+}
+
+.view-all-cards:hover h4 {
+		color: snow !important;
+}
+.view-all-cards:hover{
+    opacity: 0.6;
+    font-size: small !important;
+    transform: scale(1,1.1);
+		background: #ff800a;
+		background-color: cadetblue;
+		z-index: 2;
+		cursor: pointer;
+		/*box-shadow: 2px 2px 2px #000;*/
+}
+
+/* ====================================Single Ticket ==========================================*/
+
+.category-holder{
+	width: 100%;
+	height: 55px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	display: none;
+}
+.cat-item{
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: snow;
+	display: none;
+}
+
+#single-page {
+	position: relative;
+}
+
+.single-ticket-container{
+	position: relative;
+}
+.view-single-card{
+	background-color: #8c888d;
+}
+.sigle-ticket-view{
+	background-color: white;
+	color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	overflow-x: scroll;
+}
+
+.fading-tickets{
+	position: absolute;
+	top: 550px;
+	left: 0;
+	margin-top:0%;
+	z-index: -1;
+	/*background: linear-gradient(135deg, var(--primary), var(--secondary));*/
+}
+
+
+@media screen and (min-width: 1200px){
+
+}
+@media screen and (min-width: 992px){
+
+}
+@media screen and (min-width: 820){
+	body > div > div.container > div.justify-content-center > div > div:nth-child(1) > div{
+		height: 150;
+	}
+	body > div > div.container > div.justify-content-center > div > div:nth-child(1) > div > img{
+		height: 150;
+	}
+	body > div > div.container > div.justify-content-center > div > div:nth-child(1) > div > div > div > span.fs-4{
+		font-size: small !important;
+	}
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 600px){
+
+}
+@media screen and (max-width: 600px){
+	.sigle-ticket-view{
+		margin-left: 6%;
+	}
+	.fading-tickets{
+		margin-left: 7%;
+	}
+}
+@media screen and (max-width: 600px){
+	.sigle-ticket-view{
+		margin-left: 6%;
+	}
+	.fading-tickets{
+		margin-left: 7%;
+	}
+}
+@media screen and (max-width: 540px){
+	body > div > div.row.bg-text-wrapper > div.col-md-5.col-sm-10.col-xs-10.bg-text > h1{
+		margin: 0 auto;
+		margin-left: 10%;
+	}
+	#example-search-input{
+		margin-left: 10%;
+	}
+}
+@media screen and (max-width: 414px){
+	/*.video-wrapper{
+		height: 400px;
+	}*/
+	.category{
+		display: none;
+	}
+	.category-holder{
+		display: block;
+	}
+	.cat-item{
+		display: inline;
+	}
+	.place-holder{
+		margin-left: 2%;
+	}
+}
+/*@media screen and (max-width: 320px){
+	body > div > div.row > div.col-md-8.col-sm-9 > nav > div > form {
+		margin: 0% 2% 0% -8%;
+	}
+	body > div > div.row > div.col-md-8.col-sm-9 > nav > div > button{
+		margin-left: -10%;
+	}
+	body > div > div.row > div.col-md-8.col-sm-9 > nav > div > button > span {
+		margin-left: 40%;
+	}
+	body > div > div.row > div.col-md-8.col-sm-9 > nav > div > button > span{
+		margin-left: 60%;
+	}
+}*/
+@media screen and (max-width: 280px){
+	.category{
+		display: none;
+	}
+	.category-holder{
+		margin-bottom: -10%;
+		display: block;
+	}
+	.cat-item{
+		display: inline;
+	}
+	.sigle-ticket-view{
+		margin-left: 12%;
+	}
+	.fading-tickets{
+		margin-left: 7%;
+	}
+	body > div > div.container > div.justify-content-center > div > div:nth-child(1) > div{
+		width: 150;
+		height: 100;
+	}
+	body > div > div.container > div.justify-content-center > div > div:nth-child(1) > div > div > h4{
+		font-weight: 400;
+	}
+	 div.row.fading-tickets.mb-3 > div:nth-child(2) > div {
+	 	margin-left: 2%;
+	 }
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(1) > h2{
+	font-size: medium;
+	margin-bottom: 0px;
+	font-weight: bold;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(1) > h4.text-capitalize.fw-bold.mb-3{
+		font-size: small;
+		font-weight: bold;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(1) > h4:nth-child(6){
+		font-size: small;
+		font-weight: bold;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(1) > div > p{
+		font-weight: normal;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(1) > h4:nth-child(8){
+		font-size: small;
+		font-weight: bold;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(2) > h4{
+		font-size: medium;
+		margin-bottom: 0px;
+		font-weight: bold;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(2) > div:nth-child(3) > span.fs-4.fw-bold{
+		font-size: small;
+		font-weight: bold;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(2) > div:nth-child(3) > span:nth-child(2) > button{
+		padding: 0px 0px 0px 0px;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(2) > div:nth-child(5) > span.fs-4.fw-bold{
+		font-size: small;
+		font-weight: bold;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(2) > div:nth-child(5) > span:nth-child(2) > button{
+		padding: 0px 0px 0px 0px;
+	}
+	#single-page > div.container.single-ticket-container > div.row.sigle-ticket-view.mb-3 > div:nth-child(2) > div:nth-child(7) > span.fs-4.fw-bold{
+		font-size: small;
+		font-weight: bold;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(2) > div:nth-child(7) > span:nth-child(2) > button{
+		padding: 0px 0px 0px 0px;
+	}
+	div.row.sigle-ticket-view.mb-3 > div:nth-child(2) > div:nth-child(10){
+		margin-bottom: 0%;
+	}
+	div.row.fading-tickets.mb-3 > div:nth-child(2) > div {
+		width: 200;
+		height: 150;
+	}
+	div.row.fading-tickets.mb-3 > div:nth-child(2) > div > img{
+		height: 150;
+	}
+	.fade-last {
+		display: none;
+	}
+	footer > div > div:nth-child(1) > h1{
+		font-size: small;
+		font-weight: bolder;
+	}
+	body > div > div.container > footer > div > div:nth-child(1) > h1{
+		font-size: small !important;
+	}
+	footer > div > div:nth-child(1) > p.mt-4{
+		font-size: small;
+		font-weight: normal;
+	}
+	body > div > div.container > footer > div > div:nth-child(1) > p.mt-4{
+		font-size: smaller !important;
+	}
+	body > div > div.container > footer > div > div:nth-child(1) > p.mt-4{
+		font-weight: lighter !important;
+		text-transform: lowercase;
+	}
+	body > div > div.container > footer > div > div:nth-child(1) > p:nth-child(3){
+		text-transform: lowercase;
+	}
+	body > div > div.container > footer > div > div:nth-child(1) > p:nth-child(4){
+		text-transform: lowercase;
+	}
+	body > div > div.container > footer > div > div:nth-child(2) > p.mt-4{
+		font-weight: lighter !important;
+		text-transform: lowercase;
+	}
+	body > div > div.container > footer > div > div:nth-child(2) > p:nth-child(3){
+		font-weight: lighter !important;
+		text-transform: lowercase;
+	}
+	body > div > div.container > footer > div > div:nth-child(2) > p:nth-child(4){
+		font-weight: lighter !important;
+		text-transform: lowercase;
+	}
+	body > div > div.container > footer > div > div:nth-child(3) > p.mt-4{
+		font-weight: lighter !important;
+		text-transform: lowercase;
+	}
+	body > div > div.container > footer > div > div:nth-child(3) > p:nth-child(3){
+		font-weight: lighter !important;
+		text-transform: lowercase;
+	}
+	body > div > div.container > footer > div > div:nth-child(3) > p:nth-child(4){
+		font-weight: lighter !important;
+		text-transform: lowercase;
+	}
+	body > div > div.container > footer > div > div:nth-child(2) > h1{
+		font-size: small !important;
+	}
+	body > div > div.container > footer > div > div:nth-child(3) > h1{
+		font-size: small !important;
+	}
+	footer > div > hr {
+		margin: 0 auto;
+		margin-right: 2%;
+	}
+}
+
+
+
+
+
+/*@media (min-aspect-ratio: 16/9){
+	#myVideo{
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio:  16/9){
+	#myVideo{
+		width: auto;
+		height: 100%;
+	}
+}*/
